@@ -1,0 +1,12 @@
+[Version]
+Version=7.1
+[Designs]
+systemv1=.\systemv1\systemv1.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+systemv1=1

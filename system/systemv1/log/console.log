@@ -1,0 +1,565 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -advdataflow  cpu cpu_a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1860 kB (elbread=1032 elab2=544 kernel=283 sdf=0)
+#  2:22 PM, Tuesday, February 8, 2022
+#  Simulation has been initialized
+#  Selected Top-Level: cpu (cpu_a)
+run 100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__50.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__50.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /calu,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /cPC,  Process: line__45.
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+run 100ns
+# KERNEL: stopped at time: 400 ns
+run 100ns
+# KERNEL: stopped at time: 500 ns
+run 100ns
+# KERNEL: stopped at time: 600 ns
+run 100ns
+# KERNEL: stopped at time: 700 ns
+acom -reorder $DSN/src/registersfile_register.vhd $DSN/src/registerfile.vhd $DSN/src/selection.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/datamemoryinterface.vhd $DSN/src/pc.vhd $DSN/src/programmemory.vhd $DSN/src/instructiondecoder.vhd $DSN/src/selection3inputs.vhd $DSN/src/cpu.vhd
+# Compile with File Reorder...
+# File: e:\ERASMUS\system\systemv1\src\REGISTERSFILE_register.vhd
+# Compile Entity "reg"
+# Compile Architecture "reg_a" of Entity "reg"
+# File: e:\ERASMUS\system\systemv1\src\REGISTERFILE.vhd
+# Compile Entity "REGISTERFILE"
+# Compile Architecture "REGISTERFILE_a" of Entity "REGISTERFILE"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION.vhd
+# Compile Entity "selection"
+# Compile Architecture "selectiion_a" of Entity "selection"
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORY.vhd
+# Compile Entity "datamemory"
+# Compile Architecture "datamemory_a" of Entity "datamemory"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORYINTERFACE.vhd
+# Compile Entity "dataMemoryInterface"
+# Compile Architecture "dataMemoryInterface_a" of Entity "dataMemoryInterface"
+# File: e:\ERASMUS\system\systemv1\src\PC.vhd
+# Compile Entity "programCounter"
+# Compile Architecture "programCounter_a" of Entity "programCounter"
+# File: e:\ERASMUS\system\systemv1\src\PROGRAMMEMORY.vhd
+# Compile Entity "programMemory"
+# Compile Architecture "programMemory" of Entity "programMemory"
+# File: e:\ERASMUS\system\systemv1\src\INSTRUCTIONDECODER.vhd
+# Compile Entity "instructionDecoder"
+# Compile Architecture "instructionDecoder_a" of Entity "instructionDecoder"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION3INPUTS.vhd
+# Compile Entity "selection3Inputs"
+# Compile Architecture "selection3Inputs_a" of Entity "selection3Inputs"
+# File: e:\ERASMUS\system\systemv1\src\CPU.vhd
+# Compile Entity "CPU"
+# Compile Architecture "CPU_a" of Entity "CPU"
+# Top-Level unit detected
+# Entity  =>   CPU
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1863 kB (elbread=1032 elab2=547 kernel=283 sdf=0)
+#  3:22 PM, Tuesday, February 8, 2022
+#  Simulation has been initialized
+#  Selected Top-Level: cpu (cpu_a)
+run 100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__50.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__50.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /calu,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /cPC,  Process: line__45.
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+run 100ns
+# KERNEL: stopped at time: 400 ns
+run 100ns
+# KERNEL: stopped at time: 500 ns
+run 100ns
+# KERNEL: stopped at time: 600 ns
+run 100ns
+# KERNEL: stopped at time: 700 ns
+run 100ns
+# KERNEL: stopped at time: 800 ns
+run 100ns
+# KERNEL: stopped at time: 900 ns
+run 100ns
+# KERNEL: stopped at time: 1 us
+run 100ns
+# KERNEL: stopped at time: 1100 ns
+run 100ns
+# KERNEL: stopped at time: 1200 ns
+run 100ns
+# KERNEL: stopped at time: 1300 ns
+run 100ns
+# KERNEL: stopped at time: 1400 ns
+run 100ns
+# KERNEL: stopped at time: 1500 ns
+run 100ns
+# KERNEL: stopped at time: 1600 ns
+run 100ns
+acom -reorder $DSN/src/registersfile_register.vhd $DSN/src/registerfile.vhd $DSN/src/selection.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/datamemoryinterface.vhd $DSN/src/pc.vhd $DSN/src/programmemory.vhd $DSN/src/instructiondecoder.vhd $DSN/src/selection3inputs.vhd $DSN/src/cpu.vhd
+# Compile with File Reorder...
+# File: e:\ERASMUS\system\systemv1\src\REGISTERSFILE_register.vhd
+# Compile Entity "reg"
+# Compile Architecture "reg_a" of Entity "reg"
+# File: e:\ERASMUS\system\systemv1\src\REGISTERFILE.vhd
+# Compile Entity "REGISTERFILE"
+# Compile Architecture "REGISTERFILE_a" of Entity "REGISTERFILE"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION.vhd
+# Compile Entity "selection"
+# Compile Architecture "selectiion_a" of Entity "selection"
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORY.vhd
+# Compile Entity "datamemory"
+# Compile Architecture "datamemory_a" of Entity "datamemory"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORYINTERFACE.vhd
+# Compile Entity "dataMemoryInterface"
+# Compile Architecture "dataMemoryInterface_a" of Entity "dataMemoryInterface"
+# File: e:\ERASMUS\system\systemv1\src\PC.vhd
+# Compile Entity "programCounter"
+# Compile Architecture "programCounter_a" of Entity "programCounter"
+# File: e:\ERASMUS\system\systemv1\src\PROGRAMMEMORY.vhd
+# Compile Entity "programMemory"
+# Compile Architecture "programMemory" of Entity "programMemory"
+# File: e:\ERASMUS\system\systemv1\src\INSTRUCTIONDECODER.vhd
+# Compile Entity "instructionDecoder"
+# Compile Architecture "instructionDecoder_a" of Entity "instructionDecoder"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION3INPUTS.vhd
+# Compile Entity "selection3Inputs"
+# Compile Architecture "selection3Inputs_a" of Entity "selection3Inputs"
+# File: e:\ERASMUS\system\systemv1\src\CPU.vhd
+# Compile Entity "CPU"
+# Compile Architecture "CPU_a" of Entity "CPU"
+# Top-Level unit detected
+# Entity  =>   CPU
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1861 kB (elbread=1032 elab2=545 kernel=283 sdf=0)
+#  3:41 PM, Tuesday, February 8, 2022
+#  Simulation has been initialized
+#  Selected Top-Level: cpu (cpu_a)
+run 100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__50.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__50.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /calu,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /cPC,  Process: line__45.
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+run 100ns
+# KERNEL: stopped at time: 400 ns
+run 100ns
+# KERNEL: stopped at time: 500 ns
+run 100ns
+# KERNEL: stopped at time: 600 ns
+run 100ns
+# KERNEL: stopped at time: 700 ns
+run 100ns
+# KERNEL: stopped at time: 800 ns
+run 100ns
+# KERNEL: stopped at time: 900 ns
+run 100ns
+# KERNEL: stopped at time: 1 us
+run 1000ns
+# KERNEL: stopped at time: 2 us
+run 1000ns
+# KERNEL: stopped at time: 3 us
+run 1000ns
+# KERNEL: stopped at time: 4 us
+run 1000ns
+# KERNEL: stopped at time: 5 us
+run 1000ns
+# KERNEL: stopped at time: 6 us
+run 1000ns
+# KERNEL: stopped at time: 7 us
+run 1000ns
+# KERNEL: stopped at time: 8 us
+run 1000ns
+# KERNEL: stopped at time: 9 us
+run 1000ns
+# KERNEL: stopped at time: 10 us
+run 1000ns
+# KERNEL: stopped at time: 11 us
+run 1000ns
+# KERNEL: stopped at time: 12 us
+run 1000ns
+# KERNEL: stopped at time: 13 us
+run 1000ns
+# KERNEL: stopped at time: 14 us
+run 1000ns
+# KERNEL: stopped at time: 15 us
+run 1000ns
+# KERNEL: stopped at time: 16 us
+run 1000ns
+# KERNEL: stopped at time: 17 us
+run 1000ns
+# KERNEL: stopped at time: 18 us
+run 1000ns
+# KERNEL: stopped at time: 19 us
+run 1000ns
+# KERNEL: stopped at time: 20 us
+run 10us
+# KERNEL: stopped at time: 30 us
+run 10us
+# KERNEL: stopped at time: 40 us
+acom $DSN/src/ALU.vhd
+# Compile...
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]
+acom -reorder $DSN/src/registersfile_register.vhd $DSN/src/registerfile.vhd $DSN/src/selection.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/datamemoryinterface.vhd $DSN/src/pc.vhd $DSN/src/programmemory.vhd $DSN/src/instructiondecoder.vhd $DSN/src/selection3inputs.vhd $DSN/src/cpu.vhd
+# Compile with File Reorder...
+# File: e:\ERASMUS\system\systemv1\src\REGISTERSFILE_register.vhd
+# Compile Entity "reg"
+# Compile Architecture "reg_a" of Entity "reg"
+# File: e:\ERASMUS\system\systemv1\src\REGISTERFILE.vhd
+# Compile Entity "REGISTERFILE"
+# Compile Architecture "REGISTERFILE_a" of Entity "REGISTERFILE"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION.vhd
+# Compile Entity "selection"
+# Compile Architecture "selectiion_a" of Entity "selection"
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORY.vhd
+# Compile Entity "datamemory"
+# Compile Architecture "datamemory_a" of Entity "datamemory"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORYINTERFACE.vhd
+# Compile Entity "dataMemoryInterface"
+# Compile Architecture "dataMemoryInterface_a" of Entity "dataMemoryInterface"
+# File: e:\ERASMUS\system\systemv1\src\PC.vhd
+# Compile Entity "programCounter"
+# Compile Architecture "programCounter_a" of Entity "programCounter"
+# File: e:\ERASMUS\system\systemv1\src\PROGRAMMEMORY.vhd
+# Compile Entity "programMemory"
+# Compile Architecture "programMemory" of Entity "programMemory"
+# File: e:\ERASMUS\system\systemv1\src\INSTRUCTIONDECODER.vhd
+# Compile Entity "instructionDecoder"
+# Compile Architecture "instructionDecoder_a" of Entity "instructionDecoder"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION3INPUTS.vhd
+# Compile Entity "selection3Inputs"
+# Compile Architecture "selection3Inputs_a" of Entity "selection3Inputs"
+# File: e:\ERASMUS\system\systemv1\src\CPU.vhd
+# Compile Entity "CPU"
+# Compile Architecture "CPU_a" of Entity "CPU"
+# Error: ELAB1_0021: CPU.vhd : (165, 0): Types do not match for port "comOperation".
+# Top-Level unit detected
+# Entity  =>   CPU
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom $DSN/src/registersfile_register.vhd $DSN/src/registerfile.vhd $DSN/src/selection.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/datamemoryinterface.vhd $DSN/src/pc.vhd $DSN/src/programmemory.vhd $DSN/src/instructiondecoder.vhd $DSN/src/selection3inputs.vhd $DSN/src/cpu.vhd
+# Compile...
+# File: e:\ERASMUS\system\systemv1\src\REGISTERSFILE_register.vhd
+# Compile Entity "reg"
+# Compile Architecture "reg_a" of Entity "reg"
+# File: e:\ERASMUS\system\systemv1\src\REGISTERFILE.vhd
+# Compile Entity "REGISTERFILE"
+# Compile Architecture "REGISTERFILE_a" of Entity "REGISTERFILE"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION.vhd
+# Compile Entity "selection"
+# Compile Architecture "selectiion_a" of Entity "selection"
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORY.vhd
+# Compile Entity "datamemory"
+# Compile Architecture "datamemory_a" of Entity "datamemory"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORYINTERFACE.vhd
+# Compile Entity "dataMemoryInterface"
+# Compile Architecture "dataMemoryInterface_a" of Entity "dataMemoryInterface"
+# File: e:\ERASMUS\system\systemv1\src\PC.vhd
+# Compile Entity "programCounter"
+# Compile Architecture "programCounter_a" of Entity "programCounter"
+# File: e:\ERASMUS\system\systemv1\src\PROGRAMMEMORY.vhd
+# Compile Entity "programMemory"
+# Compile Architecture "programMemory" of Entity "programMemory"
+# File: e:\ERASMUS\system\systemv1\src\INSTRUCTIONDECODER.vhd
+# Compile Entity "instructionDecoder"
+# Compile Architecture "instructionDecoder_a" of Entity "instructionDecoder"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION3INPUTS.vhd
+# Compile Entity "selection3Inputs"
+# Compile Architecture "selection3Inputs_a" of Entity "selection3Inputs"
+# File: e:\ERASMUS\system\systemv1\src\CPU.vhd
+# Compile Entity "CPU"
+# Compile Architecture "CPU_a" of Entity "CPU"
+# Error: COMP96_0078: CPU.vhd : (147, 23): Unknown identifier "STD_LOGICVECTOR".
+# Error: COMP96_0064: CPU.vhd : (147, 23): Unknown type.
+# Error: COMP96_0104: CPU.vhd : (165, 21): Undefined type of expression.
+# Error: COMP96_0104: CPU.vhd : (170, 131): Undefined type of expression.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom $DSN/src/registersfile_register.vhd $DSN/src/registerfile.vhd $DSN/src/selection.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/datamemoryinterface.vhd $DSN/src/pc.vhd $DSN/src/programmemory.vhd $DSN/src/instructiondecoder.vhd $DSN/src/selection3inputs.vhd $DSN/src/cpu.vhd
+# Compile...
+# File: e:\ERASMUS\system\systemv1\src\REGISTERSFILE_register.vhd
+# Compile Entity "reg"
+# Compile Architecture "reg_a" of Entity "reg"
+# File: e:\ERASMUS\system\systemv1\src\REGISTERFILE.vhd
+# Compile Entity "REGISTERFILE"
+# Compile Architecture "REGISTERFILE_a" of Entity "REGISTERFILE"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION.vhd
+# Compile Entity "selection"
+# Compile Architecture "selectiion_a" of Entity "selection"
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORY.vhd
+# Compile Entity "datamemory"
+# Compile Architecture "datamemory_a" of Entity "datamemory"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORYINTERFACE.vhd
+# Compile Entity "dataMemoryInterface"
+# Compile Architecture "dataMemoryInterface_a" of Entity "dataMemoryInterface"
+# File: e:\ERASMUS\system\systemv1\src\PC.vhd
+# Compile Entity "programCounter"
+# Compile Architecture "programCounter_a" of Entity "programCounter"
+# File: e:\ERASMUS\system\systemv1\src\PROGRAMMEMORY.vhd
+# Compile Entity "programMemory"
+# Compile Architecture "programMemory" of Entity "programMemory"
+# File: e:\ERASMUS\system\systemv1\src\INSTRUCTIONDECODER.vhd
+# Compile Entity "instructionDecoder"
+# Compile Architecture "instructionDecoder_a" of Entity "instructionDecoder"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION3INPUTS.vhd
+# Compile Entity "selection3Inputs"
+# Compile Architecture "selection3Inputs_a" of Entity "selection3Inputs"
+# File: e:\ERASMUS\system\systemv1\src\CPU.vhd
+# Compile Entity "CPU"
+# Compile Architecture "CPU_a" of Entity "CPU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -reorder $DSN/src/registersfile_register.vhd $DSN/src/registerfile.vhd $DSN/src/selection.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/datamemoryinterface.vhd $DSN/src/pc.vhd $DSN/src/programmemory.vhd $DSN/src/instructiondecoder.vhd $DSN/src/selection3inputs.vhd $DSN/src/cpu.vhd
+# Compile with File Reorder...
+# File: e:\ERASMUS\system\systemv1\src\REGISTERSFILE_register.vhd
+# Compile Entity "reg"
+# Compile Architecture "reg_a" of Entity "reg"
+# File: e:\ERASMUS\system\systemv1\src\REGISTERFILE.vhd
+# Compile Entity "REGISTERFILE"
+# Compile Architecture "REGISTERFILE_a" of Entity "REGISTERFILE"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION.vhd
+# Compile Entity "selection"
+# Compile Architecture "selectiion_a" of Entity "selection"
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORY.vhd
+# Compile Entity "datamemory"
+# Compile Architecture "datamemory_a" of Entity "datamemory"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORYINTERFACE.vhd
+# Compile Entity "dataMemoryInterface"
+# Compile Architecture "dataMemoryInterface_a" of Entity "dataMemoryInterface"
+# File: e:\ERASMUS\system\systemv1\src\PC.vhd
+# Compile Entity "programCounter"
+# Compile Architecture "programCounter_a" of Entity "programCounter"
+# File: e:\ERASMUS\system\systemv1\src\PROGRAMMEMORY.vhd
+# Compile Entity "programMemory"
+# Compile Architecture "programMemory" of Entity "programMemory"
+# File: e:\ERASMUS\system\systemv1\src\INSTRUCTIONDECODER.vhd
+# Compile Entity "instructionDecoder"
+# Compile Architecture "instructionDecoder_a" of Entity "instructionDecoder"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION3INPUTS.vhd
+# Compile Entity "selection3Inputs"
+# Compile Architecture "selection3Inputs_a" of Entity "selection3Inputs"
+# File: e:\ERASMUS\system\systemv1\src\CPU.vhd
+# Compile Entity "CPU"
+# Compile Architecture "CPU_a" of Entity "CPU"
+# Top-Level unit detected
+# Entity  =>   CPU
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1864 kB (elbread=1032 elab2=548 kernel=283 sdf=0)
+#  5:33 PM, Tuesday, February 8, 2022
+#  Simulation has been initialized
+#  Selected Top-Level: cpu (cpu_a)
+run 100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__52.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__66.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__52.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /calu,  Process: line__66.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /cPC,  Process: line__45.
+# KERNEL: stopped at time: 100 ns
+run 100nsr
+# Error: run: unexpected parameter 100nsr
+# Error: Usage: run [ <time_step> | @<time> | -all | -next | (-delta <number>|@<number>) ]
+run 100nsr
+# Error: run: unexpected parameter 100nsr
+# Error: Usage: run [ <time_step> | @<time> | -all | -next | (-delta <number>|@<number>) ]
+run 100nsr
+# Error: run: unexpected parameter 100nsr
+# Error: Usage: run [ <time_step> | @<time> | -all | -next | (-delta <number>|@<number>) ]
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+run 100ns
+# KERNEL: stopped at time: 400 ns
+run 100ns
+# KERNEL: stopped at time: 500 ns
+run 100ns
+# KERNEL: stopped at time: 600 ns
+acom -reorder $DSN/src/registersfile_register.vhd $DSN/src/registerfile.vhd $DSN/src/selection.vhd $DSN/src/alu.vhd $DSN/src/datamemory.vhd $DSN/src/datamemoryinterface.vhd $DSN/src/pc.vhd $DSN/src/programmemory.vhd $DSN/src/instructiondecoder.vhd $DSN/src/selection3inputs.vhd $DSN/src/cpu.vhd
+# Compile with File Reorder...
+# File: e:\ERASMUS\system\systemv1\src\REGISTERSFILE_register.vhd
+# Compile Entity "reg"
+# Compile Architecture "reg_a" of Entity "reg"
+# File: e:\ERASMUS\system\systemv1\src\REGISTERFILE.vhd
+# Compile Entity "REGISTERFILE"
+# Compile Architecture "REGISTERFILE_a" of Entity "REGISTERFILE"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION.vhd
+# Compile Entity "selection"
+# Compile Architecture "selectiion_a" of Entity "selection"
+# File: e:\ERASMUS\system\systemv1\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_a" of Entity "ALU"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORY.vhd
+# Compile Entity "datamemory"
+# Compile Architecture "datamemory_a" of Entity "datamemory"
+# File: e:\ERASMUS\system\systemv1\src\DATAMEMORYINTERFACE.vhd
+# Compile Entity "dataMemoryInterface"
+# Compile Architecture "dataMemoryInterface_a" of Entity "dataMemoryInterface"
+# File: e:\ERASMUS\system\systemv1\src\PC.vhd
+# Compile Entity "programCounter"
+# Compile Architecture "programCounter_a" of Entity "programCounter"
+# File: e:\ERASMUS\system\systemv1\src\PROGRAMMEMORY.vhd
+# Compile Entity "programMemory"
+# Compile Architecture "programMemory" of Entity "programMemory"
+# File: e:\ERASMUS\system\systemv1\src\INSTRUCTIONDECODER.vhd
+# Compile Entity "instructionDecoder"
+# Compile Architecture "instructionDecoder_a" of Entity "instructionDecoder"
+# File: e:\ERASMUS\system\systemv1\src\SELECTION3INPUTS.vhd
+# Compile Entity "selection3Inputs"
+# Compile Architecture "selection3Inputs_a" of Entity "selection3Inputs"
+# File: e:\ERASMUS\system\systemv1\src\CPU.vhd
+# Compile Entity "CPU"
+# Compile Architecture "CPU_a" of Entity "CPU"
+# Top-Level unit detected
+# Entity  =>   CPU
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 1864 kB (elbread=1032 elab2=548 kernel=283 sdf=0)
+#  5:36 PM, Tuesday, February 8, 2022
+#  Simulation has been initialized
+#  Selected Top-Level: cpu (cpu_a)
+run 100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__52.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /calu,  Process: line__66.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__51.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /calu,  Process: line__52.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /calu,  Process: line__66.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 0,  Instance: /cPC,  Process: line__45.
+# KERNEL: stopped at time: 100 ns
+run 100ns
+# KERNEL: stopped at time: 200 ns
+run 100ns
+# KERNEL: stopped at time: 300 ns
+run 100ns
+# KERNEL: stopped at time: 400 ns
+run 100ns
+# KERNEL: stopped at time: 500 ns
+run 100ns
+# KERNEL: stopped at time: 600 ns
+#  Simulation has been stopped

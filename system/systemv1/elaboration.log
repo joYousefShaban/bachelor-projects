@@ -1,0 +1,27 @@
+elbread.dll ver. 1.0.5.375 Tue Feb 08 17:36:13 2022
+
+
+-------------------------------------------------------
+Entity               | Architecture          | Library
+-------------------------------------------------------
+cpu                  | cpu_a                 | systemv1
+selection3inputs     | selection3inputs_a    | systemv1
+selection            | selectiion_a          | systemv1
+registerfile         | registerfile_a        | systemv1
+alu                  | alu_a                 | systemv1
+datamemoryinterface  | datamemoryinterface_a | systemv1
+datamemory           | datamemory_a          | systemv1
+programcounter       | programcounter_a      | systemv1
+programmemory        | programmemory         | systemv1
+instructiondecoder   | instructiondecoder_a  | systemv1
+reg                  | reg_a                 | systemv1
+-------------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------
