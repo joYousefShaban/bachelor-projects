@@ -12,7 +12,7 @@ In which, the student has to write a specification document for an online system
  - System models (use case diagram)
 
 Attached you will find my approach to the UseCase Diagram:
-1.  ![UseCase-Diagram.png](UseCase-Diagram.png)
+![UseCase-Diagram.png](UseCase-Diagram.png)
     
     
 > Please check the official requirments of the assignment in the attached pdf document under the name of "SWE Project".
