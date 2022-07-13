@@ -1,6 +1,6 @@
 # data-structures-assignment
 
-This assignment was finished in the second semester of my bachelor's program at Hashemite University.
+This assignment was finished in the second year of my bachelor's program at Hashemite University.
 
 In which, the requirments can be sorted into two main catogories:
 
