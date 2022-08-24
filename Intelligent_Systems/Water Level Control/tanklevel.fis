@@ -1,0 +1,47 @@
+[System]
+Name='tanklevel'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='level'
+Range=[-10 10]
+NumMFs=3
+MF1='negative':'trimf',[-18 -10 1]
+MF2='zero':'trimf',[-8 0 8]
+MF3='postive':'trimf',[0 10 18]
+
+[Input2]
+Name='rate'
+Range=[-0.5 0.5]
+NumMFs=3
+MF1='negative':'trimf',[-0.9 -0.5 0]
+MF2='zero':'trimf',[-0.4 0 0.4]
+MF3='positve':'trimf',[0 0.5 0.9]
+
+[Output1]
+Name='valve'
+Range=[-5 5]
+NumMFs=3
+MF1='negative':'trimf',[-9 -5 0]
+MF2='zero':'trimf',[-4 0 4]
+MF3='postive':'trimf',[0 5 9]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 1 (1) : 1
+1 3, 1 (1) : 1
+2 1, 1 (1) : 1
+2 2, 2 (1) : 1
+2 3, 3 (1) : 1
+3 1, 3 (1) : 1
+3 2, 3 (1) : 1
+3 3, 3 (1) : 1
