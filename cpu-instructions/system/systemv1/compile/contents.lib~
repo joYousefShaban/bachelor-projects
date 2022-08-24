@@ -1,0 +1,23 @@
+1294
+~E 1 "./src/DATAMEMORYINTERFACE.vhd" 28 datamemoryinterface
+~A 1 "./src/DATAMEMORYINTERFACE.vhd" 37 datamemoryinterface_a
+~E 1 "./src/CPU.vhd" 28 cpu
+~A 1 "./src/CPU.vhd" 38 cpu_a
+~E 1 "./src/ALU.vhd" 29 alu
+~A 1 "./src/ALU.vhd" 42 alu_a
+~E 1 "./src/DATAMEMORY.vhd" 28 datamemory
+~A 1 "./src/DATAMEMORY.vhd" 42 datamemory_a
+~E 1 "./src/REGISTERSFILE_register.vhd" 28 reg
+~A 1 "./src/REGISTERSFILE_register.vhd" 39 reg_a
+~E 1 "./src/PC.vhd" 29 programcounter
+~A 1 "./src/PC.vhd" 42 programcounter_a
+~E 1 "./src/INSTRUCTIONDECODER.vhd" 28 instructiondecoder
+~A 1 "./src/INSTRUCTIONDECODER.vhd" 53 instructiondecoder_a
+~E 1 "./src/PROGRAMMEMORY.vhd" 28 programmemory
+~A 1 "./src/PROGRAMMEMORY.vhd" 37 programmemory
+~E 1 "./src/SELECTION.vhd" 28 selection
+~A 1 "./src/SELECTION.vhd" 39 selectiion_a
+~E 1 "./src/REGISTERFILE.vhd" 28 registerfile
+~A 1 "./src/REGISTERFILE.vhd" 43 registerfile_a
+~E 1 "./src/SELECTION3INPUTS.vhd" 28 selection3inputs
+~A 1 "./src/SELECTION3INPUTS.vhd" 40 selection3inputs_a

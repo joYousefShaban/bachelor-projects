@@ -1,0 +1,16 @@
+[Files List]
+C:\Program Files (x86)\Aldec\Active-HDL 7.1\Vlib\Std/src/standard.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 7.1\Vlib\IEEE/src/stdlogic.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 7.1\Vlib\IEEE/src/arith.vhd=S
+C:\Program Files (x86)\Aldec\Active-HDL 7.1\Vlib\IEEE/src/unsigned.vhd=S
+e:\ERASMUS\system\systemv1/src/REGISTERSFILE_register.vhd=S
+e:\ERASMUS\system\systemv1/src/INSTRUCTIONDECODER.vhd=S
+e:\ERASMUS\system\systemv1/src/PROGRAMMEMORY.vhd=S
+e:\ERASMUS\system\systemv1/src/PC.vhd=S
+e:\ERASMUS\system\systemv1/src/DATAMEMORY.vhd=S
+e:\ERASMUS\system\systemv1/src/DATAMEMORYINTERFACE.vhd=S
+e:\ERASMUS\system\systemv1/src/ALU.vhd=S
+e:\ERASMUS\system\systemv1/src/REGISTERFILE.vhd=S
+e:\ERASMUS\system\systemv1/src/SELECTION.vhd=S
+e:\ERASMUS\system\systemv1/src/SELECTION3INPUTS.vhd=S
+e:\ERASMUS\system\systemv1/src/CPU.vhd=S

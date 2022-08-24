@@ -1,0 +1,11 @@
+i<>.\src\REGISTERSFILE_register.vhd
+i<>.\src\REGISTERFILE.vhd
+i<>.\src\SELECTION.vhd
+i<>.\src\ALU.vhd
+i<>.\src\DATAMEMORY.vhd
+i<>.\src\DATAMEMORYINTERFACE.vhd
+i<>.\src\PC.vhd
+i<>.\src\PROGRAMMEMORY.vhd
+i<>.\src\INSTRUCTIONDECODER.vhd
+i<>.\src\SELECTION3INPUTS.vhd
+i<>.\src\CPU.vhd

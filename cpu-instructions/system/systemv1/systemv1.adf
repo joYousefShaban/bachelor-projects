@@ -1,0 +1,61 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=systemv1
+
+[Library]
+systemv1=.\systemv1.lib
+
+[$LibMap$]
+systemv1=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=cpu|cpu_a|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/REGISTERSFILE_register.vhd=-1
+/REGISTERFILE.vhd=-1
+/SELECTION.vhd=-1
+/ALU.vhd=-1
+/DATAMEMORY.vhd=-1
+/DATAMEMORYINTERFACE.vhd=-1
+/PC.vhd=-1
+/PROGRAMMEMORY.vhd=-1
+/INSTRUCTIONDECODER.vhd=-1
+/SELECTION3INPUTS.vhd=-1
+/CPU.vhd=-1
+/run_mips3.awf=-1
+/run_mips4.awf=-1
+/demo.awf=-1
+
+[Files.Data]
+.\src\REGISTERSFILE_register.vhd=VHDL Source Code
+.\src\REGISTERFILE.vhd=VHDL Source Code
+.\src\SELECTION.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\DATAMEMORY.vhd=VHDL Source Code
+.\src\DATAMEMORYINTERFACE.vhd=VHDL Source Code
+.\src\PC.vhd=VHDL Source Code
+.\src\PROGRAMMEMORY.vhd=VHDL Source Code
+.\src\INSTRUCTIONDECODER.vhd=VHDL Source Code
+.\src\SELECTION3INPUTS.vhd=VHDL Source Code
+.\src\CPU.vhd=VHDL Source Code
+.\src\run_mips3.awf=Waveform File
+.\src\run_mips4.awf=Waveform File
+.\src\demo.awf=Waveform File
+
