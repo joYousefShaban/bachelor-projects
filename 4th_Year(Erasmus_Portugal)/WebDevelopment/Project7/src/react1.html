@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Intro To React</title>
+     <script crossorigin src="https://unpkg.com/react@16/umd/react.
+development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.
+development.js"></script>
+    <script>
+      function start() {
+        const rootElement =
+          React.createElement("div", { },
+            React.createElement("h1", { }, "Highest Level Heading"),
+            React.createElement("ul", { },
+
+              React.createElement("li", { },
+                React.createElement("h2", { }, "First item, with second level heading"),
+                React.createElement("a",
+                  { href : "https://www.ualg.pt" },
+                  "UAlg web page"
+                )
+              ),
+
+              React.createElement("li", { },
+                React.createElement("h2", { },
+                  "Second item, with second level heading"
+                ),
+                React.createElement("a",
+                  { href: "https://www.ceot.ualg.pt/research-groups/networking-iot" },
+                  "CEOT web page"
+                )
+              )
+            )
+          );
+        ReactDOM.render(rootElement,
+          document.getElementById("mainContainer")
+        );
+      }
+    </script>
+  </head>
+  <body onLoad="start();">
+    <div id="mainContainer"></div>
+  </body>
+</html>

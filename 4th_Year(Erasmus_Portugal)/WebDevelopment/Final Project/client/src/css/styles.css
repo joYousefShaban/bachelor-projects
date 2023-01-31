@@ -1,0 +1,97 @@
+.App {
+  font-family: sans-serif;
+  width: 1200px;
+  margin: 20px auto;
+  color: #333333;
+  font-size: 16px;
+}
+.student-flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title {
+  text-align: center;
+}
+.student-form,
+.student-table {
+  flex: 1;
+  width: 50%;
+}
+.form-row {
+  margin-bottom: 10px;
+}
+.form-error {
+  color: red;
+  font-size: 14px;
+  line-height: 26px;
+}
+.form-error:before {
+  content: "*";
+  display: inline-block;
+  margin-right: 4px;
+  color: #f5222d;
+}
+.form-row label {
+  display: block;
+  margin-bottom: 6px;
+}
+.form-row input {
+  width: 86%;
+  padding: 4px;
+  line-height: 26px;
+  border-radius: 4px;
+  border: 1px solid #bababa;
+}
+input:focus,
+input:hover {
+  outline: none;
+  border-color: #40a9f3;
+}
+button {
+  min-width: 68px;
+  padding: 4px 8px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #bababa;
+  background: #fff;
+  cursor: pointer;
+}
+.student-form button:first-child {
+  color: #fff;
+  border-color: #40a9f3;
+  background: #40a9f3;
+}
+button + button {
+  margin-left: 10px;
+  color:red;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+}
+td {
+  border-bottom: 1px solid #aaaaaa;
+}
+thead {
+  /* border-bottom: 2px solid #bababa; */
+  border-bottom: 2px solid #000000;
+}
+th{
+  text-align: center;
+}
+td {
+  text-align: center;
+  padding: 0.5em 0;
+}
+td:first-child {
+  text-align: left;
+  padding: 0.5em 0;
+}
+td:last-child {
+  border-left: 1px solid #ffffff ;
+}

@@ -1,0 +1,131 @@
+
+Note: If the call to webpack is not working (because it is not in the path), use 'node_modules/webpack/bin/webpack' or install webpack as global using 'npm install webpack webpack-cli -g'
+
+Note: link mentioned in Lab8 is https://github.com/fzammetti/books/blob/master/modern-full-stack-development/mailbag/client/
+
+* FIRST STEP: project
+
+Create the client project directory in parallel with the server project directory. Inside the client project directory create a directory tree structure similar to https://github.com/fzammetti/books/tree/master/modern-full-stack-development/mailbag/client. Do not include file in it. Create your project as follows:
+
+npm init -y
+npm install --save-dev webpack
+node webpack init
+
+====== Accept the default except for the following (for webpack bundle to include Typescript and CSS):
+- Typescript
+- CSS only
+======
+
+npm install @babel/core @babel/cli
+npm install @babel/preset-env
+npm install @babel/preset-react
+
+Note: I think you can uninstall these later, here we using to ensure that intermediate steps are ok.
+
+====== create file .babelrc:
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+======
+
+node webpack  ...see if project initial configuration does not give errors!
+
+* SECOND STEP: dependencies and configuration files
+
+npm i react
+npm i react-dom
+npm i @types/react
+npm i axios@^0.19.0
+npm i normalize.css
+npm i --save-dev babel-plugin-syntax-dynamic-import --legacy-peer-deps
+npm i @mui/material @mui/icons-material @emotion/react @emotion/styled
+
+Note: recent versions of axios give problems with the code at the book, so we will use an older version.
+Note: the book used @material-ui but migration to @mui is required (see https://mui.com/pt/material-ui/migration/migration-v4/#run-codemods)
+
+=== replace the tsconfig.json by the following:
+{
+  "compilerOptions" : {
+    "esModuleInterop" : true,
+    "sourceMap" : true,
+    "noImplicitAny" : false,
+    "module" : "commonjs",
+    "target" : "es6",
+    "lib" : [ "es2015", "es2017", "dom" ],
+    "removeComments" : true,
+    "jsx" : "react",
+    "allowJs" : true,
+    "baseUrl" : "./",
+    "paths" : { "components/*" : [ "src/components/*" ] }
+  }
+}
+===
+
+=== replace the following in webpack.config.js (leave remaining stuff and rules)
+...
+entry : "./src/code/main.tsx",
+...
+plugins: [
+    new HtmlWebpackPlugin({ template : "./src/index.html", filename : "./index.html" }),
+  ],
+...
+   rules: [ 
+      {
+        test : /\.html$/,
+        use : { loader : "html-loader" }
+      },
+...
+===
+Note: You need to have an index.html at the src directory, otherwise webpack will give error; download it from the link provided in the pdf's lab. Content is not relevant now.
+
+=== create file 'main.tsx' in 'code' directory
+// Style imports.
+import "normalize.css";
+import "../css/main.css";
+// React imports.
+import React from "react";
+import ReactDOM from "react-dom";
+===
+
+=== include 'main.css' in 'css' directory (download from site)
+...
+===
+
+npm i --save-dev html-loader    ...because this loader was included
+
+node webpack  ...see if it creates the bundle in 'dist' directory (inside your client project directory)
+
+* THIRD STEP: code
+
+- copy provided code inside 'src/code' (and subsirectories) to your project (we will remove unnecessary stuff later; ex: we have not implemented the IMAP part at the REST API server project, so the client must work accordingly)
+
+- Inside diretorio 'code' use the following for your '@material' related code to be automatically adapted to the new @mui dependencies:
+npx @mui/codemod v5.0.0/preset-safe ./components
+
+- you will get errors because webpack < 5 works differently... see comments in output. To overcome them change webpack.config.js as follows:
+
+===
+...
+resolve: {
+    extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
+    fallback: { "http": false, "browser": false, "https": false, "zlib": false,
+      "stream": false, "url": false, "buffer": false, "timers": false, "assert": false, "axios": false 
+    }
+  },
+...
+===
+
+node webpack ... you will have the bundles and html file at dist directory
+
+* FORTH STEP: run application
+
+- Run the server in a terminal window, and then your browser with http://127.0.0.1:8080
+
+Note: Do not forget to update express.static(path.join(__dirname, "/../../ClientSide/dist")) ...use the name of your client project directory
+
+* FIFTH STEP: Remove unnecessary code... according to REST API server implementation.
+
+
+FINAL NOTE: We had to do this step by step in order to be able to run the provided REST API client code. When making your client project from scratch you can use Create React App (see: https://create-react-app.dev/docs/getting-started/) to help you with the set up of the project.
+
+

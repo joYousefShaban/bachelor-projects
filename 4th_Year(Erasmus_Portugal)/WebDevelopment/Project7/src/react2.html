@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Intro To React</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.
+development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.
+development.js"></script>
+    <script>
+      function start() {
+        class NewComp extends React.Component {
+          render() { // temos de anexar as properties ao componente que vai ser retornado, e que pode ser reutilizado 
+            return (
+              React.createElement("li", { },
+                React.createElement("h2", { },
+                  this.props.heading),
+                React.createElement("a",
+                  { href : this.props.href },
+                  this.props.descricao
+                )
+              )
+            );
+          }
+        }
+        const rootElement =
+          React.createElement("div", { },
+            React.createElement("h1", { }, "Highest Level Heading"),
+            React.createElement("ul", { },
+              React.createElement(
+                NewComp, { // vai ser criado um objeto da NewComp class
+                  heading : "First item, with second level heading",
+                  href : "https://www.ualg.pt",
+                  descricao : "UAlg web page"
+                }
+              ),
+              React.createElement(
+                NewComp, {
+                  heading : "Second item, with second level heading",
+                  href : "https://www.ceot.ualg.pt/research-groups/networking-iot",
+                  descricao : "CEOT web page"
+                }
+              )
+            )
+          );
+        ReactDOM.render(rootElement,
+          document.getElementById("mainContainer")
+        );
+      }
+    </script>
+  </head>
+  <body onLoad="start();">
+    <div id="mainContainer"></div>
+  </body>
+</html>
