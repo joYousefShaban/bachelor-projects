@@ -1,0 +1,37 @@
+access-list 100 permit tcp any 192.168.0.0 0.0.0.255 eq 80
+access-list 100 permit tcp any 192.168.0.0 0.0.0.255 eq 443
+access-list 100 deny ip any 192.168.0.0 0.0.0.255
+ip access-group 100 out
+
+access-list 110 permit tcp 192.168.0.0 0.0.0.255 192.168.1.0 0.0.0.255 eq 8080
+access-list 110 permit tcp 192.168.2.0 0.0.0.255 192.168.1.0 0.0.0.255 eq 3306
+access-list 110 deny ip any 192.168.1.0 0.0.0.255
+ip access-group 110 out
+
+access-list 120 permit tcp 192.168.1.0 0.0.0.255 192.168.2.0 0.0.0.255 eq 3306
+access-list 120 deny ip any 192.168.2.0 0.0.0.255
+ip access-group 120 out
+
+
+
+
+Number Direction Protocol Port Source/Destination Action
+
+100 out ICMP    192.168.1.0 DENY
+100 in ICMP     any ALLOW
+ip access-group 100 out
+
+
+
+access-list 110 deny ip 192.168.0.0 0.0.0.255 192.168.1.0 0.0.0.255
+# access-list 110 permit ip 192.168.0.0 0.0.0.255 any
+# access-list 110 permit ip 192.168.1.0 0.0.0.255 any
+# int f0/1 
+# ip access-group 110 out
+# exit
+# write mem
+
+
+
+access-list 110 deny icmp 192.168.0.1 0.0.0.255 192.168.1.1 0.0.0.255 echo
+access-list 110 permit ip any any
